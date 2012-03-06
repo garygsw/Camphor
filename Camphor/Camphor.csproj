@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8EEC5670-D15A-43C3-AD91-2D9F367CB3DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Camphor</RootNamespace>
+    <AssemblyName>Camphor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\DateTimeManager.cs" />
+    <Compile Include="Controller\EventDetailsManager.cs" />
+    <Compile Include="Controller\EventBasicManpowerManager.cs" />
+    <Compile Include="Controller\EventManpowerManager.cs" />
+    <Compile Include="Controller\EventOrganizerManager.cs" />
+    <Compile Include="Controller\EventProgramManager.cs" />
+    <Compile Include="Controller\EventsOrganizerSearchManager.cs" />
+    <Compile Include="Controller\ListViewItemComparerByDate.cs" />
+    <Compile Include="Controller\ListViewItemComparerByString.cs" />
+    <Compile Include="Controller\StudentEventManager.cs" />
+    <Compile Include="Controller\StudentParticularsManager.cs" />
+    <Compile Include="Model\Gender.cs" />
+    <Compile Include="Model\Event.cs" />
+    <Compile Include="Model\Logistic.cs" />
+    <Compile Include="Model\Role.cs" />
+    <Compile Include="View\AboutPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AboutPage.designer.cs">
+      <DependentUpon>AboutPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddBudgetItemPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddBudgetItemPage.designer.cs">
+      <DependentUpon>AddBudgetItemPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddLogisticsItemPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddLogisticsItemPage.designer.cs">
+      <DependentUpon>AddLogisticsItemPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddStudentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddStudentPage.designer.cs">
+      <DependentUpon>AddStudentPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\AdminManager.cs" />
+    <Compile Include="Controller\LoginManager.cs" />
+    <Compile Include="View\AdminAddStudentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdminAddStudentPage.Designer.cs">
+      <DependentUpon>AdminAddStudentPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminControllerPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdminControllerPage.Designer.cs">
+      <DependentUpon>AdminControllerPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Budget.cs" />
+    <Compile Include="View\EditAdminParticularsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EditAdminParticularsPage.Designer.cs">
+      <DependentUpon>EditAdminParticularsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Programs.cs" />
+    <Compile Include="Model\Server.cs" />
+    <Compile Include="Model\Student.cs" />
+    <Compile Include="Model\Tasks.cs" />
+    <Compile Include="View\EditManpowerPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EditManpowerPage.designer.cs">
+      <DependentUpon>EditManpowerPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EditPersonalParticularsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EditPersonalParticularsPage.Designer.cs">
+      <DependentUpon>EditPersonalParticularsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddEventPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddEventPage.Designer.cs">
+      <DependentUpon>AddEventPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddProgramPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddProgramPage.Designer.cs">
+      <DependentUpon>AddProgramPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddTaskPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddTaskPage.Designer.cs">
+      <DependentUpon>AddTaskPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DashBoardPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DashBoardPage.Designer.cs">
+      <DependentUpon>DashBoardPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EventControllerPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EventControllerPage.Designer.cs">
+      <DependentUpon>EventControllerPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntryPoint.cs" />
+    <Compile Include="View\ProgramControllerPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProgramControllerPage.Designer.cs">
+      <DependentUpon>ProgramControllerPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\SeeEventDetailsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SeeEventDetailsPage.Designer.cs">
+      <DependentUpon>SeeEventDetailsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserManualPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UserManualPage.Designer.cs">
+      <DependentUpon>UserManualPage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\AboutPage.resx">
+      <DependentUpon>AboutPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AddBudgetItemPage.resx">
+      <DependentUpon>AddBudgetItemPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AddLogisticsItemPage.resx">
+      <DependentUpon>AddLogisticsItemPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AddStudentPage.resx">
+      <DependentUpon>AddStudentPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AdminAddStudentPage.resx">
+      <DependentUpon>AdminAddStudentPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AdminControllerPage.resx">
+      <DependentUpon>AdminControllerPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EditAdminParticularsPage.resx">
+      <DependentUpon>EditAdminParticularsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EditManpowerPage.resx">
+      <DependentUpon>EditManpowerPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EditPersonalParticularsPage.resx">
+      <DependentUpon>EditPersonalParticularsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AddEventPage.resx">
+      <DependentUpon>AddEventPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AddProgramPage.resx">
+      <DependentUpon>AddProgramPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AddTaskPage.resx">
+      <DependentUpon>AddTaskPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DashBoardPage.resx">
+      <DependentUpon>DashBoardPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EventControllerPage.resx">
+      <DependentUpon>EventControllerPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProgramControllerPage.resx">
+      <DependentUpon>ProgramControllerPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\SeeEventDetailsPage.resx">
+      <DependentUpon>SeeEventDetailsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserManualPage.resx">
+      <DependentUpon>UserManualPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Data.dat" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
